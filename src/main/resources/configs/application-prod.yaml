@@ -1,0 +1,17 @@
+server:
+  port: 8521
+spring:
+  config:
+    activate:
+      on-profile: prod
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: org.hibernate.dialect.PostgreSQL95Dialect
+    url: jdbc:postgresql://localhost:5432/clevertec
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
